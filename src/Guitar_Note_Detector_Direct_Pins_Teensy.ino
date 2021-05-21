@@ -1,7 +1,7 @@
 #include <Dictionary.h>
 #include "MIDIUSB.h"
 
-// Teensy 4.1 board
+// Teensy 4.1 board pins
 // #define numberOfFrets 16
 // #define numberOfStrings 6
 // #define numberOfCoordinates numberOfFrets *numberOfStrings
@@ -14,18 +14,32 @@
 // int inputString6 = 5;
 // int fretPins[numberOfFrets] = {6, 7, 8, 9, 10, 11, 12, 24, 25, 26, 27, 28, 29, 30, 31, 32};
 
-// Arduino Mega ATmega2560 board
-#define numberOfFrets 16
+// Arduino Leonardo board pins
+#define numberOfFrets 14
 #define numberOfStrings 6
 #define numberOfCoordinates numberOfStrings * numberOfFrets
 
-int inputString1 = 8;
-int inputString2 = 9;
-int inputString3 = 10;
-int inputString4 = 11;
-int inputString5 = 12;
-int inputString6 = 13;
-int fretPins[numberOfFrets]= {7, 6, 5, 4, 3, 2, 1, 0, 14, 15, 16, 17, 18, 19, 20, 21};
+int inputString1 = A5;
+int inputString2 = A4;
+int inputString3 = A3;
+int inputString4 = A2;
+int inputString5 = A1;
+int inputString6 = A0;
+int fretPins[numberOfFrets]= {7, 6, 5, 4, 3, 2, 1, 0, 14, 15, 16, 17, 18, 19};
+
+
+// Arduino Mega ATmega2560 board pins
+// #define numberOfFrets 16
+// #define numberOfStrings 6
+// #define numberOfCoordinates numberOfStrings * numberOfFrets
+
+// int inputString1 = 8;
+// int inputString2 = 9;
+// int inputString3 = 10;
+// int inputString4 = 11;
+// int inputString5 = 12;
+// int inputString6 = 13;
+// int fretPins[numberOfFrets]= {7, 6, 5, 4, 3, 2, 1, 0, 14, 15, 16, 17, 18, 19, 20, 21};
 
 int stringValues[numberOfStrings] = {0, 0, 0, 0, 0, 0};
 
